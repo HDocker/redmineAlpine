@@ -12,7 +12,7 @@ exec_as_redmine() {
 }
 
 # install build dependencies
-apt-get update
+apk update
 DEBIAN_FRONTEND=noninteractive apt-get install -y ${BUILD_DEPENDENCIES}
 
 # add ${REDMINE_USER} user
